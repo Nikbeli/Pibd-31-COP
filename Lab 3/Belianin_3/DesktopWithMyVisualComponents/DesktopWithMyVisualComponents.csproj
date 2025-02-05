@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BarsukovComponents" Version="1.0.0" />
+		<PackageReference Include="BelianinComponents" Version="1.0.0" />
+		<PackageReference Include="KryukovLib" Version="1.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Win32.SystemEvents" Version="8.0.0" />
+		<PackageReference Include="MyCustomComponents" Version="1.0.0" />
+		<PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+		<PackageReference Include="Unity" Version="5.11.10" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EnterpriseBusinessLogic\EnterpriseBusinessLogic.csproj" />
+		<ProjectReference Include="..\EnterpriseContracts\EnterpriseContracts.csproj" />
+		<ProjectReference Include="..\EnterpriseDataBaseImplement\EnterpriseDataBaseImplement.csproj" />
+	</ItemGroup>
+
+</Project>
